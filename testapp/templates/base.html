@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Django</title>
+</head>
+<body>
+<form method="post" action=".">
+    {% csrf_token %}
+
+    <label for="checkbox1">One</label>
+    <input type="checkbox" name="options" value="1">
+
+    <label for="checkbox2">Two</label>
+    <input type="checkbox" name="options" value="2">
+    <input type="submit" name="submit" value="Submit">
+</form>
+</body>
+</html>
